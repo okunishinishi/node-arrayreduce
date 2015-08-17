@@ -1,3 +1,4 @@
 {
-  "arrayfilter":"https://github.com/okunishinishi/node-arrayfilter"
+  "arrayfilter": "https://github.com/okunishinishi/node-arrayfilter",
+  "arraysort": "https://github.com/okunishinishi/node-arraysort"
 }
