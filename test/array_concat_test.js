@@ -3,8 +3,6 @@
  * Runs with nodeunit.
  */
 
-"use strict";
-
 var arrayConcat = require('../lib/array_concat.js');
 
 exports['Concat arrays.'] = function (test) {
@@ -21,3 +19,4 @@ exports['Try invalid args.'] = function (test) {
     });
     test.done();
 };
+
