@@ -1,8 +1,8 @@
 {
   "name": "arrayreduce",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Array reducing utility.",
-  "main": "index.js",
+  "main": "lib",
   "scripts": {
     "build": "./ci/build.js",
     "test": "./ci/test.js",
