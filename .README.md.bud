@@ -12,8 +12,8 @@ var apeTmpl = require('ape-tmpl'),
 
 module.exports = apeTmpl.readmeMdBud({
     pkg: pkg,
-    repo: 'okunishinishi/node-' + pkg.name,
-    sections: 'docs/readme/*.md.hbs',
+    repo: pkg.repository,
+    sections: 'doc/readme/*.md.hbs',
     badges: {
         travis: true,
         codeclimate: true,
@@ -21,10 +21,10 @@ module.exports = apeTmpl.readmeMdBud({
         gemnasium: false,
         npm: true
     },
-    links: require('./docs/links'),
+    links: require('./doc/links'),
     vars: {
         get usageIndices() {
-            return fs.readFileSync(__dirname + '/docs/readme/02.Usage.md.hbs').toString()
+            return fs.readFileSync(__dirname + '/doc/readme/02.Usage.md.hbs').toString()
                 .split(os.EOL)
                 .filter(arrayfilter.patternAccept(/^\s*###/))
                 .map(function (line) {
