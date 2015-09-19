@@ -20,6 +20,7 @@ arrayreduce
 [bd_gemnasium_shield_url]: https://gemnasium.com/okunishinishi/node-arrayreduce.svg
 [bd_npm_url]: http://www.npmjs.org/package/arrayreduce
 [bd_npm_shield_url]: http://img.shields.io/npm/v/arrayreduce.svg?style=flat
+[bd_bower_badge_url]: https://img.shields.io/bower/v/arrayreduce.svg?style=flat
 
 <!-- Badge End -->
 
@@ -33,9 +34,13 @@ Array reducing utility.
 
 
 
+
 <!-- Sections Start -->
 <a name="sections"></a>
 
+<!-- Section from "doc/readme/01.Installation.md.hbs" Start -->
+
+<a name="section-doc-readme-01-installation-md"></a>
 Installation
 -----
 
@@ -43,6 +48,11 @@ Installation
 npm install arrayreduce --save
 ```
 
+<!-- Section from "doc/readme/01.Installation.md.hbs" End -->
+
+<!-- Section from "doc/readme/02.Usage.md.hbs" Start -->
+
+<a name="section-doc-readme-02-usage-md"></a>
 Usage
 -------
 
@@ -66,6 +76,8 @@ console.log(values); // -> ['foo', 'baz', 'bar']
 ```
 
 
+
+<!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
 
 <!-- Sections Start -->
