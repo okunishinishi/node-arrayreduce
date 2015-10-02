@@ -1,6 +1,6 @@
 {
   "name": "arrayreduce",
-  "version": "1.0.4",
+  "version": "1.1.1",
   "description": "Array reducing utility.",
   "main": "lib",
   "scripts": {

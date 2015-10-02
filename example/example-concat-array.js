@@ -4,5 +4,5 @@ var arrayreduce = require('arrayreduce');
 var arrayConcat = arrayreduce.arrayConcat();
 
 // Execute sorting.
-var values = ['foo', ['bar', 'baz']].reduce(arrayConcat);
+var values = ['foo', ['bar', 'baz']].reduce(arrayConcat, []);
 console.log(values); // -> ['foo', 'baz', 'bar']

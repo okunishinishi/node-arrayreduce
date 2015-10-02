@@ -57,26 +57,57 @@ Usage
 -------
 
 
-+ [Concat Array.](#concat-array-)
++ [Concat Array](#concat-array)
++ [Boolean And](#boolean-and)
++ [Boolean Or](#boolean-or)
 
-### Concat Array.
+### Concat Array
 
 `arraysort.arrayConcat()` create a function which reduce entries as concatenated array.
 
-```Javascript
+```javascript
 var arrayreduce = require('arrayreduce');
 
 // Define a reducing function.
 var arrayConcat = arrayreduce.arrayConcat();
 
 // Execute sorting.
-var values = ['foo', ['bar', 'baz']].reduce(arrayConcat);
+var values = ['foo', ['bar', 'baz']].reduce(arrayConcat, []);
 console.log(values); // -> ['foo', 'baz', 'bar']
 
 ```
 
+### Boolean And
 
+`arraysort.booleanAnd()` create a function which reduce entries with and condition.
 
+```javascript
+var arrayreduce = require('arrayreduce');
+
+// Define a reducing function.
+var booleanAnd = arrayreduce.booleanAnd();
+
+// Execute sorting.
+var result = [true, false, true].reduce(booleanAnd, true);
+console.log(result); // -> false
+
+```
+
+### Boolean Or
+
+`arraysort.booleanOr()` create a function which reduce entries with and condition.
+
+```javascript
+var arrayreduce = require('arrayreduce');
+
+// Define a reducing function.
+var booleanOr = arrayreduce.booleanOr();
+
+// Execute sorting.
+var result = [true, false, true].reduce(booleanOr, true);
+console.log(result); // -> true
+
+```
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
 
