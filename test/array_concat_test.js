@@ -2,8 +2,9 @@
  * Test case for arrayConcat.
  * Runs with nodeunit.
  */
+"use strict";
 
-var arrayConcat = require('../lib/array_concat.js');
+const arrayConcat = require('../lib/array_concat.js');
 
 exports['Concat arrays.'] = function (test) {
     test.deepEqual(
@@ -14,7 +15,7 @@ exports['Concat arrays.'] = function (test) {
 };
 
 exports['Try invalid args.'] = function (test) {
-    test.throws(function () {
+    test.throws(() => {
         arrayConcat('foo', 'bar');
     });
     test.done();

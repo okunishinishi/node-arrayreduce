@@ -2,8 +2,9 @@
  * Test case for booleanOr.
  * Runs with nodeunit.
  */
+"use strict";
 
-var booleanOr = require('../lib/boolean_or.js');
+const booleanOr = require('../lib/boolean_or.js');
 
 exports.setUp = function (done) {
     done();

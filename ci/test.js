@@ -12,7 +12,7 @@ var apeTasking = require('ape-tasking'),
     apeTesting = require('ape-testing');
 
 apeTasking.runTasks('test', [
-    function (callback) {
+    (callback) => {
         apeTesting.runNodeunit('test/**/*_test.js', callback);
     }
 ], true);

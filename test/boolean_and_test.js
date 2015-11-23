@@ -2,8 +2,9 @@
  * Test case for booleanAnd.
  * Runs with nodeunit.
  */
+"use strict";
 
-var booleanAnd = require('../lib/boolean_and.js');
+const booleanAnd = require('../lib/boolean_and.js');
 
 exports.setUp = function (done) {
     done();

@@ -8,7 +8,7 @@ var apeTasking = require('ape-tasking'),
     coz = require('coz');
 
 apeTasking.runTasks('build', [
-    function (callback) {
+    (callback) => {
         coz.render([
             '.*.bud',
             'lib/.*.bud',

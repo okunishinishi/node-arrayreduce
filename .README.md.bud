@@ -4,7 +4,7 @@
 
 "use strict";
 
-var apeTmpl = require('ape-tmpl'),
+const apeTmpl = require('ape-tmpl'),
     fs = require('fs'),
     os = require('os'),
     arrayfilter = require('arrayfilter'),

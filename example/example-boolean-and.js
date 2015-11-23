@@ -1,8 +1,10 @@
-var arrayreduce = require('arrayreduce');
+"use strict";
+
+const arrayreduce = require('arrayreduce');
 
 // Define a reducing function.
-var booleanAnd = arrayreduce.booleanAnd();
+let booleanAnd = arrayreduce.booleanAnd();
 
 // Execute sorting.
-var result = [true, false, true].reduce(booleanAnd, true);
+let result = [true, false, true].reduce(booleanAnd, true);
 console.log(result); // -> false
