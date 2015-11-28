@@ -1,6 +1,6 @@
 {
   "name": "arrayreduce",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Array reducing utility.",
   "main": "lib",
   "scripts": {
@@ -27,7 +27,7 @@
     "ape-reporting": "^2.0.3",
     "ape-tasking": "^2.0.0",
     "ape-testing": "^2.0.0",
-    "ape-tmpl": "^2.0.4",
+    "ape-tmpl": "^2.0.5",
     "ape-updating": "^2.0.0",
     "arrayfilter": "^1.1.2",
     "coz": "^3.1.6",
@@ -35,6 +35,6 @@
   },
   "dependencies": {},
   "engines": {
-    "node": ">4.0.0"
+    "node": ">=4.0.0"
   }
 }
