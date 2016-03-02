@@ -42,9 +42,9 @@ Array reducing utility.
 <!-- Sections Start -->
 <a name="sections"></a>
 
-<!-- Section from "doc/readme/01.Installation.md.hbs" Start -->
+<!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
-<a name="section-doc-readme-01-installation-md"></a>
+<a name="section-doc-guides-01-installation-md"></a>
 Installation
 -----
 
@@ -53,11 +53,11 @@ npm install arrayreduce --save
 ```
 
 
-<!-- Section from "doc/readme/01.Installation.md.hbs" End -->
+<!-- Section from "doc/guides/01.Installation.md.hbs" End -->
 
-<!-- Section from "doc/readme/02.Usage.md.hbs" Start -->
+<!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
-<a name="section-doc-readme-02-usage-md"></a>
+<a name="section-doc-guides-02-usage-md"></a>
 Usage
 -------
 
@@ -65,6 +65,7 @@ Usage
 + [Concat Array](#concat-array)
 + [Boolean And](#boolean-and)
 + [Boolean Or](#boolean-or)
++ [Index By Attr](#index-by-attr)
 
 ### Concat Array
 
@@ -96,7 +97,7 @@ const arrayreduce = require('arrayreduce');
 // Define a reducing function.
 let booleanAnd = arrayreduce.booleanAnd();
 
-// Execute sorting.
+// Execute reducing.
 let result = [true, false, true].reduce(booleanAnd, true);
 console.log(result); // -> false
 
@@ -114,13 +115,34 @@ const arrayreduce = require('arrayreduce');
 // Define a reducing function.
 let booleanOr = arrayreduce.booleanOr();
 
-// Execute sorting.
+// Execute reducing.
 let result = [true, false, true].reduce(booleanOr, true);
 console.log(result); // -> true
 
 ```
 
-<!-- Section from "doc/readme/02.Usage.md.hbs" End -->
+### Index By Attr
+
+`arraysort.indexByAttr()` create a function which reduce entries to index object.
+
+```javascript
+"use strict";
+
+const arrayreduce = require('arrayreduce');
+
+// Define a reducing function.
+let indexByAttr = arrayreduce.indexByAttr();
+
+// Execute indexing.
+let index = [
+    {id: 1, name: 'foo'},
+    {id: 2, name: 'bar'}
+].reduce(indexByAttr('id'), {});
+console.log(index); // -> {'1': {id: 1, name: 'foo'}, '2': {id: 2, name: 'bar'}}
+
+```
+
+<!-- Section from "doc/guides/02.Usage.md.hbs" End -->
 
 
 <!-- Sections Start -->

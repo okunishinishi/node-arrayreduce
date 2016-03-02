@@ -5,6 +5,6 @@ const arrayreduce = require('arrayreduce');
 // Define a reducing function.
 let booleanAnd = arrayreduce.booleanAnd();
 
-// Execute sorting.
+// Execute reducing.
 let result = [true, false, true].reduce(booleanAnd, true);
 console.log(result); // -> false
