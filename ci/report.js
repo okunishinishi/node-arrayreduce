@@ -8,11 +8,11 @@
 
 process.chdir(__dirname + '/..');
 
-var apeTasking = require('ape-tasking'),
+const apeTasking = require('ape-tasking'),
     apeReporting = require('ape-reporting');
 
-apeTasking.runTasks([
+apeTasking.runTasks('report', [
     (callback) => {
-        apeReporting.sendToCodeclimate('docs/coverage/lcov.info', callback);
+        apeReporting.sendToCodeclimate('coverage/lcov.info', callback);
     }
 ], true);

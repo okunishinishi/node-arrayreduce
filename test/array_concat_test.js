@@ -1,23 +1,24 @@
 /**
  * Test case for arrayConcat.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
 "use strict";
 
-const arrayConcat = require('../lib/array_concat.js');
+const arrayConcat = require('../lib/array_concat.js'),
+    assert = require('assert');
 
-exports['Concat arrays.'] = function (test) {
-    test.deepEqual(
+it('Concat arrays.', (done) => {
+    assert.deepEqual(
         ['foo', 'bar', 'baz'],
         ['foo', ['bar', 'baz']].reduce(arrayConcat(), [])
     );
-    test.done();
-};
+    done();
+});
 
-exports['Try invalid args.'] = function (test) {
-    test.throws(() => {
+it('Try invalid args.', (done) => {
+    assert.throws(() => {
         arrayConcat('foo', 'bar');
     });
-    test.done();
-};
+    done();
+});
 

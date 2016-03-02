@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 
+/**
+ * Build this project.
+ */
+
 "use strict";
 
 process.chdir(__dirname + '/..');
 
-var apeTasking = require('ape-tasking'),
+const apeTasking = require('ape-tasking'),
     coz = require('coz');
 
 apeTasking.runTasks('build', [
@@ -16,4 +20,3 @@ apeTasking.runTasks('build', [
         ], callback);
     }
 ], true);
-

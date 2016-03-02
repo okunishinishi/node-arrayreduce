@@ -1,22 +1,16 @@
 /**
  * Test case for booleanAnd.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
 "use strict";
 
-const booleanAnd = require('../lib/boolean_and.js');
+const booleanAnd = require('../lib/boolean_and.js'),
+    assert = require('assert');
 
-exports.setUp = function (done) {
+
+it('Boolean and', (done) => {
+    assert.ok([true, true, true].reduce(booleanAnd(), true));
+    assert.ok(![true, false, true].reduce(booleanAnd(), true));
     done();
-};
-
-exports.tearDown = function (done) {
-    done();
-};
-
-exports['Boolean and'] = function (test) {
-    test.ok([true, true, true].reduce(booleanAnd(), true));
-    test.ok(![true, false, true].reduce(booleanAnd(), true));
-    test.done();
-};
+});
 
